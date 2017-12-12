@@ -7,12 +7,13 @@
 </head>
 <body>
   <?php
-    $number = 25;
-    $text = 'Bonjour j\'ai ';
-    function concat($number, $text) {
-      return $text.$number.' ans !';
-    }
-    echo concat($number, $text);
+    $hautsDeFrance = array (
+      '59' => 'Nord',
+      '62' => 'Pas-de-Calais',
+      '80' => 'Somme',
+      '60' => 'Oise',
+      '02' => 'Aisne'
+    );
    ?>
 </body>
 </html>
