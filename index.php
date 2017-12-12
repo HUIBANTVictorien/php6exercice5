@@ -7,14 +7,12 @@
 </head>
 <body>
   <?php
-
-  $text = 'On y arrive presque';
-    for ($number = 1; $number < 15; $number++) {
-      echo $text.'<br/>';
+    $number = 25;
+    $text = 'Bonjour j\'ai ';
+    function concat($number, $text) {
+      return $text.$number.' ans !';
     }
-    if ($number == 15) {
-      echo ('On y est arrivé !');
-    }
+    echo concat($number, $text);
    ?>
 </body>
 </html>
