@@ -2,18 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>exercice 5 partie 3 php</title>
+    <title>exercice 5 partie 5 php</title>
   </head>
 </head>
 <body>
+  <a href="index.php?semaine=12">Semaine</a>
   <?php
-    $hautsDeFrance = array (
-      '59' => 'Nord',
-      '62' => 'Pas-de-Calais',
-      '80' => 'Somme',
-      '60' => 'Oise',
-      '02' => 'Aisne'
-    );
+  if (isset($_GET['semaine'])) {
+  echo 'Nous sommes à la semaine : ' . $_GET['semaine'];
+} else {
+  echo 'Cliquez sur le lien pour afficher les informations !';
+};
    ?>
 </body>
 </html>
